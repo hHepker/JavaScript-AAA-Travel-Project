@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link href="css mobile/jquery.mobile-1.4.5.css" rel="stylesheet"/>
+    <link href="css mobile/aaa travel mobile.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css%20mobile/jquery-mobile-theme-170805-0/themes/haley.min.css"/>
+    <link rel="stylesheet" href="css%20mobile/jquery-mobile-theme-170805-0/themes/jquery.mobile.icons.min.css"/>
+    <script src="js mobile/jquery.js"></script>
+    <script src="js mobile/jquery.mobile-1.4.5.js"></script>
+    <script src="js mobile/jquery.validate.min.js"></script>
+    <script src="js mobile/aaa travel mobile.js"></script>
+    <title>AAA Travel</title>
+    <style>
+        .left {
+            float: left;
+            margin-right: 2%;
+        }
+
+        .right {
+            float: right;
+        }
+    </style>
+    <script>
+
+
+    </script>
+</head>
+
+<body>
+<!--// header and pictures-->
+<div id="page1" data-role="page" data-theme="a">
+    <div data-role="header" data-position="fixed" style="color:white" font>
+        <h3>AAA Travel</h3>
+    </div>
+    <div data-role="main">
+        <a href="#popupBeach" data-rel="popup" data-position-to="window" data-transition="fade"><img
+                class="popphoto" src="css mobile/images mobile/beach.jpg" alt="Beach" style="width:39%"></a>
+        <a href="#popupItaly" data-rel="popup" data-position-to="window" data-transition="fade"><img
+                class="popphoto" src="css mobile/images mobile/italy.jpg" alt="Italy" style="width:29%"></a>
+        <a href="#popupTemple" data-rel="popup" data-position-to="window" data-transition="fade"><img
+                class="popphoto" src="css mobile/images mobile/temple.jpg" alt="temple" style="width:29%"></a>
+        <br>
+        Customer Information
+    </div>
+<!--        // customer information fill out form-->
+    <form>
+        <div class="ui-field-contain">
+                 <label for="text-4">First Name:</label>
+                 <input type="text" data-mini="true" name="text-4" id="text-4">
+        </div>
+        <div class="ui-field-contain">
+                 <label for="text-4">Last Name:</label>
+                 <input type="text" data-mini="true" data-clear-btn="true" name="text-4" id="text-5">
+        </div>
+    </form>
+         
+    <form>
+        <div class="ui-field-contain">
+                <label for="email-1">Email Address:</label>
+                <input type="email" data-mini="true" data-clear-btn="false" name="email-1" id="email-1" value="">
+        </div>
+    </form>
+        
+    <form>
+        <div class="ui-field-contain">
+                 <label for="tel-1">Phone Number:</label>
+                 <input type="tel" data-mini="true" data-clear-btn="false" name="tel-1" id="tel-1" value="">
+        </div>
+    </form>
+    <div class="ui-field-contain">
+            <label for="text-4">Zip Code:</label>
+            <input type="text" data-mini="true" name="text-4" id="text-6">
+    </div>
+      
+    <form>
+        <fieldset data-role="controlgroup" data-type="horizontal">
+                    
+            <legend>Number of Adults:</legend>
+            <input type="radio" name="radio-choice-h-" id="radio-choice-h-a" value="other" checked="checked">
+                    <label for="radio-choice-h-a">0</label>
+                    <input type="radio" name="radio-choice-h-" id="radio-choice-h-b" value="on">
+                    <label for="radio-choice-h-b">1</label>
+                    <input type="radio" name="radio-choice-h-" id="radio-choice-h-c" value="off">
+                    <label for="radio-choice-h-c">2</label>
+                    <input type="radio" name="radio-choice-h-" id="radio-choice-h-d" value="other">
+                    <label for="radio-choice-h-d">3</label>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset data-role="controlgroup" data-type="horizontal">
+                    
+            <legend>Number of Children:</legend>
+            <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2a" value="other" checked="checked">
+                    <label for="radio-choice-h-2a">0</label>
+                    <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2b" value="on">
+                    <label for="radio-choice-h-2b">1</label>
+                    <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2c" value="off">
+                    <label for="radio-choice-h-2c">2</label>
+                    <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2d" value="other">
+                    <label for="radio-choice-h-2d">3</label>
+                
+        </fieldset>
+    </form>
+    <div data-role="footer" data-position="fixed">
+        <a class="ui-btn ui-btn-icon-right ui-icon-carat-r right " href="#page2">Next</a>
+    </div>
+</div>
+
+<!--// type of travel page-->
+<div id="page2" data-role="page" data-theme="a">
+    <div data-role="header" data-position="fixed">
+        <h3>Travel Type</h3>
+    </div>
+    <div data-role="main">
+
+    </div>
+    <div data-role="collapsible" data-collapsed="true">
+            <h4>Adventure</h4>
+            
+        <ul data-role="listview">
+<!--                    // will go to a different page depending on what option selected-->
+            <li><a href="#page3">Safari</a></li>
+                    
+            <li><a href="#page4">Ski & Snowboarding</a></li>
+                    
+            <li><a href="#page5">Cycling</a></li>
+                
+        </ul>
+    </div>
+
+    <div data-role="collapsible" data-collapsed="true">
+            <h4>Beaches</h4>
+            
+        <ul data-role="listview">
+                    
+            <li><a href="#page6">Caribbean</a></li>
+                    
+            <li><a href="#page7">Europe</a></li>
+                    
+            <li><a href="#page8">US</a></li>
+                
+        </ul>
+    </div>
+
+    <div data-role="collapsible" data-collapsed="true">
+            <h4>Artistic & Cultural</h4>
+            
+        <ul data-role="listview">
+                    
+            <li><a href="#page9">European Culture</a></li>
+                    
+            <li><a href="#page10">Asian Culture</a></li>
+                    
+            <li><a href="#page11">Mayan Culture</a></li>
+                
+        </ul>
+    </div>
+<!--    // back and next page buttons-->
+    <div data-role="footer" data-position="fixed">
+        <a id="haley" class="ui-btn ui-btn-icon-right ui-icon-carat-r right " href="#page3">Next</a>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <a class="ui-btn ui-btn-icon-left ui-icon-carat-l left " href="#page1">Back</a>
+    </div>
+</div>
+<!--// buttons to select locations and boxes to enter start and end dates-->
+<div id="page3" data-role="page" data-theme="a">
+    <div data-role="header" data-position="fixed">
+        <h3>Safari</h3>
+    </div>
+    <div data-role="main">
+        <a href="#" class="ui-btn ui-btn-inline">Zumbiar</a>
+        <button class="ui-btn ui-btn-inline">Namibia</button>
+        <div>
+            <p>Start Date: <input type="text" id="datepicker"></p>
+
+        </div>
+        <div>
+            <p>End Date: <input type="text" id="datepicker2"></p>
+
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <a class="ui-btn ui-btn-icon-left ui-icon-carat-l left " href="#page2">Back</a>
+        <a class="ui-btn ui-btn-icon-right ui-icon-carat-r right " href="#page12">Next</a>
+    </div>
+
+</div>
+
+<div id="page4" data-role="page" data-theme="a">
+    <div data-role="header" data-position="fixed">
+        <h3>Ski & Snowboarding</h3>
+    </div>
+<div data-role="main">
+    <a href="#" class="ui-btn ui-btn-inline">Utah</a>
+    <button class="ui-btn ui-btn-inline">Austria</button>
+    <div>
+        <p>Start Date: <input type="text" id="datepicker3"></p>
+
+    </div>
+    <div>
+        <p>End Date: <input type="text" id="datepicker4"></p>
+
+    </div>
+
+</div>
+<div data-role="footer" data-position="fixed">
+    <a class="ui-btn ui-btn-icon-left ui-icon-carat-l left" href="#page2">Back</a>
+    <a class="ui-btn ui-btn-icon-right ui-icon-carat-r right " href="#page12">Next</a>
+</div>
+</div>
+    <div id="page5" data-role="page" data-theme="a">
+        <div data-role="header" data-position="fixed">
+            <h3>Cycling</h3>
+        </div>
+        <div data-role="main">
+            <a href="#" class="ui-btn ui-btn-inline">California</a>
+            <button class="ui-btn ui-btn-inline">Italy</button>
+            <div>
+                <p>Start Date: <input type="text" id="datepicker5"></p>
+
+            </div>
+            <div>
+                <p>Start Date: <input type="text" id="datepicker6"></p>
+
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <a class="ui-btn ui-btn-icon-left ui-icon-carat-l left" href="#page2">Back</a>
+            <a class="ui-btn ui-btn-icon-right ui-icon-carat-r right " href="#page12">Next</a>
+        </div>
+    </div>
+<div id="page6" data-role="page" data-theme="a">
+    <div data-role="header" data-position="fixed">
+        <h3>Caribbean</h3>
+    </div>
+    <div data-role="main">
+        <a href="#" class="ui-btn ui-btn-inline">Cuba</a>
+        <button class="ui-btn ui-btn-inline">Jamaica</button>
+        <div>
+            <p>Start Date: <input type="text" id="datepicker7"></p>
+
+        </div>
+        <div>
+            <p>End Date: <input type="text" id="datepicker8"></p>
+
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <a class="ui-btn ui-btn-icon-left ui-icon-carat-l left " href="#page2">Back</a>
+        <a class="ui-btn ui-btn-icon-right ui-icon-carat-r right " href="#page12">Next</a>
+    </div>
+
+</div>
+
+<div id="page7" data-role="page" data-theme="a">
+    <div data-role="header" data-position="fixed">
+        <h3>Europe</h3>
+    </div>
+    <div data-role="main">
+        <a href="#" class="ui-btn ui-btn-inline">Italy</a>
+        <button class="ui-btn ui-btn-inline">Spain</button>
+        <div>
+            <p>Start Date: <input type="text" id="datepicker9"></p>
+
+        </div>
+        <div>
+            <p>End Date: <input type="text" id="datepicker10"></p>
+
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <a class="ui-btn ui-btn-icon-left ui-icon-carat-l left " href="#page2">Back</a>
+        <a class="ui-btn ui-btn-icon-right ui-icon-carat-r right " href="#page12">Next</a>
+    </div>
+
+</div>
+
+<div id="page8" data-role="page" data-theme="a">
+    <div data-role="header" data-position="fixed">
+        <h3>US</h3>
+    </div>
+    <div data-role="main">
+        <a href="#" class="ui-btn ui-btn-inline">Florida</a>
+        <button class="ui-btn ui-btn-inline">California</button>
+        <div>
+            <p>Start Date: <input type="text" id="datepicker11"></p>
+
+        </div>
+        <div>
+            <p>End Date: <input type="text" id="datepicker12"></p>
+
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <a class="ui-btn ui-btn-icon-left ui-icon-carat-l left " href="#page2">Back</a>
+        <a class="ui-btn ui-btn-icon-right ui-icon-carat-r right " href="#page12">Next</a>
+    </div>
+
+</div>
+
+<div id="page9" data-role="page" data-theme="a">
+<div data-role="header" data-position="fixed">
+    <h3>European Culture</h3>
+</div>
+<div data-role="main">
+    <a href="#" class="ui-btn ui-btn-inline">France</a>
+    <button class="ui-btn ui-btn-inline">Italy</button>
+    <div>
+        <p>Start Date: <input type="text" id="datepicker13"></p>
+
+    </div>
+    <div>
+        <p>End Date: <input type="text" id="datepicker14"></p>
+
+    </div>
+</div>
+    <div data-role="footer" data-position="fixed">
+        <a class="ui-btn ui-btn-icon-left ui-icon-carat-l left " href="#page2">Back</a>
+        <a class="ui-btn ui-btn-icon-right ui-icon-carat-r right " href="#page12">Next</a>
+    </div>
+</div>
+
+<div id="page10" data-role="page" data-theme="a">
+<div data-role="header" data-position="fixed">
+    <h3>Asian Culture</h3>
+</div>
+<div data-role="main">
+    <a href="#" class="ui-btn ui-btn-inline">Japan</a>
+    <div>
+        <p>Start Date: <input type="text" id="datepicker15"></p>
+
+    </div>
+    <div>
+        <p>End Date: <input type="text" id="datepicker16"></p>
+
+    </div>
+</div>
+    <div data-role="footer" data-position="fixed">
+        <a class="ui-btn ui-btn-icon-left ui-icon-carat-l left " href="#page2">Back</a>
+        <a class="ui-btn ui-btn-icon-right ui-icon-carat-r right " href="#page12">Next</a>
+    </div>
+</div>
+
+<div id="page11" data-role="page" data-theme="a">
+<div data-role="header" data-position="fixed">
+    <h3>Mayan Culture</h3>
+</div>
+<div data-role="main">
+    <a href="#" class="ui-btn ui-btn-inline">Guatemala</a>
+    <button class="ui-btn ui-btn-inline">Mexico</button>
+    <div>
+        <p>Start Date: <input type="text" id="datepicker17"></p>
+
+    </div>
+    <div>
+        <p>End Date: <input type="text" id="datepicker18"></p>
+
+    </div>
+</div>
+    <div data-role="footer" data-position="fixed">
+        <a class="ui-btn ui-btn-icon-left ui-icon-carat-l left " href="#page2">Back</a>
+        <a class="ui-btn ui-btn-icon-right ui-icon-carat-r right " href="#page12">Next</a>
+    </div>
+</div>
+<!--// confirm page-->
+<div id="page12" data-role="page" data-theme="a">
+    <div data-role="header" data-position="fixed">
+        <h3>Submit</h3>
+    </div>
+    <div data-role="main">
+        <form>
+            Ready to start your vacation?
+            <a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Submit</a>
+            <div data-role="popup" id="popupBasic">
+                <p>A confirmation email has been sent with more information.</p>
+            </div>
+<div data-role="footer" data-position="fixed">
+    <a class="ui-btn ui-btn-icon-left ui-icon-carat-l left" href="#page1">Back</a>
+</div>
+
+</body>
+
+</html>

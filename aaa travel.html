@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="css/jquery-ui.css" rel="stylesheet"/>
+    <link href="css/jquery-ui.theme.css" rel="stylesheet"/>
+    <link href="css/aaa travel.css" rel="stylesheet"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/aaa travel.js"></script>
+    <title>Travel</title>
+</head>
+<body>
+<script>
+    $(function () {
+        $("#tabs").tabs({
+            heightStyle: "content"
+        });
+        $("#datepicker").datepicker();
+        $("#datepicker2").datepicker();
+        $("#navigation").tabs({
+            event: 'mouseover'
+        });
+    });
+</script>
+<!--// header with the logo and search bar area-->
+<div id="mainContentWrapper">
+    <div id="mainContent">
+        <nav id="header2" style="overflow: hidden">
+            <div id="logo">
+                <a href="/">
+                    <img src="css/images/web-logo.png" alt="logo">
+                </a>
+            </div>
+            <div id="nav">
+                <div class="top" style="float:right">
+                    <a>Sign In</a> | <a>Pay Bill</a> | <a>Roadside assistance</a>
+                    <button class="Button-Red">
+                        Join AAA
+                        <span style="color: red"></span>
+                    </button>
+                </div>
+                <br/>
+                <div class="Site-Search">
+                    <input id="search-field" type="text" value=" Search" maxlength="200" class="Site-Search-Input"/>
+                    <input id="searchBtn" class="Site-Search-Button" title="search">
+                    <span class="ui-icon ui-icon-search" style="color:red"></span>
+                </div>
+            </div>
+        </nav>
+<!--        // navigation bar-->
+        <ul class="tab-bar">
+            <li data-num="1" class="tab wave dark"></li>
+            <span class="nav-seperator"></span>
+            <li data-num="2" class="tab wave dark">Insurance</li>
+            <li data-num="3" class="tab wave dark">Travel</li>
+            <li data-num="4" class="tab wave dark">Discounts & Rewards</li>
+            <li data-num="5" class="tab wave dark">Automotive</li>
+            <li data-num="6" class="tab wave dark">Banking</li>
+            <li data-num="7" class="tab wave dark"></li>
+        </ul>
+        <section class="et-hero-tabs">
+            <div class="et-hero-tabs">
+                <li>
+                    <a class="et-hero-tab" href="#tab-membership">| MEMBERSHIP |</a>
+                </li>
+                <li>
+                    <a class="et-hero-tab" href="#tab-insurance"> INSURANCE |</a>
+                </li>
+                <li>
+                    <a class="et-hero-tab" href="#tab-travel"> TRAVEL |</a>
+                </li>
+                <li>
+                    <a class="et-hero-tab" href="#tab-discounts"> DISCOUNTS & REWARDS |</a>
+                </li>
+                <li>
+                    <a class="et-hero-tab" href="#tab-automotive"> AUTOMOTIVE |</a>
+                </li>
+                <li>
+                    <a class="et-hero-tab" href="#tab-banking"> BANKING |</a>
+                </li>
+                <li>
+                    <a class="et-hero-tab" href="#tab-community"> COMMUNITY |</a>
+                </li>
+                <span class="et-hero-tab-slider"></span>
+            </div>
+        </section>
+<!--// picture slide show-->
+        <div id="picture">
+            <div>
+            <img src="css/images/120119_GALL_TVL_Free-Extra-Day-And-Night_AandR.jpg">
+            </div>
+            <div>
+                <img src="css/images/120119_GALL_TVL_See-Why-More-AAA-Travelers-Choose-RCI.jpg">
+            </div>
+            <div>
+                <img src="css/images/120119_GALL_TVL_50-Off-2nd-Guest-Princess.jpg">
+            </div>
+            <div>
+                <img src="css/images/120119_GALL_TVL_AAA-Members-Get-A-Free-Day.jpg">
+            </div>
+            <div>
+                <img src="css/images/120119_GALL_TVL_Celebrate-100-Years-Of-Excellence.jpg">
+            </div>
+        </div>
+<!--        //picture and info on the right side-->
+        <div id="rightnav">
+            <article class="teaserBox">
+                <div class="teaserImg">
+                    <img src="css/images/110619_GALL_TLP_Well-Traveled-With-AAA.png" alt="Well Traveled With AAA">
+                </div>
+                <div class="teaserBody">
+                    <div id="well-traveled" class="teaserTitle">Well-Traveled With&nbsp;AAA</div>
+                    <div id="well-traveled body" class="teaserText">
+                        AAA Travel now offers Podcasts and Webcasts to explore destinations around the globe.
+                    </div>
+                    <u id="well-traveled learn" class="teaserLink"> LEARN MORE</u>
+                </div>
+            </article>
+
+            <article class="teaserBox2">
+                <div id="teaserImg2">
+                    <img src="css/images/120119_GALL_TLP_AAA-Hertz-Great-Value.jpg">
+                </div>
+                <div class="teaserBody2">
+                    <div id="hertz" class="teaserTitle2">AAA + Hertz = Great&nbsp;Value</div>
+                    <div id="Hertz body" class="teaserText2">
+                        AAA Members receive FREE use of one child, infant or booster seat, savings of $13.99 a day!
+                    </div>
+                    <u id="hertz book" class="teaserLink2">BOOK NOW</u>
+                </div>
+
+            </article>
+            <article class="teaserBox3">
+                <div id="teaserImg3">
+                    <img src="css/images/120119_GALL_TLP_Choose-Fun-With-Carnival-Cruise-Line.jpg">
+                </div>
+                <div class="teaserBody3">
+                    <div id="choose" class="teaserTitle3">Choose Fun with Carnival Cruise Line&reg;</div>
+                    <div id="chosse body" class="teaserText3">
+                        Enjoy AAA Vacations&reg; Amenities that include a two category upgrade and more.
+                    </div>
+                    <u id="choose book" class="teaserLink3">BOOK NOW</u>
+                </div>
+            </article>
+
+            <article class="teaserBox4">
+                <div id="teaserImg4">
+                    <img src="css/images/TCO_bazaarVoice_tropical.jpg" style="width: 350px">
+                </div>
+                <div class="teaserBody4">
+                    <div id="feedback" class="teaserTitle4">AAA Travelers' Feedback</div>
+                    <div id="feedback body" class="teaserText4">
+                        Personal reviews of cruises and tours.
+                    </div>
+                    <u id="feedback read" class="teaserLink4">Read Now</u>
+                </div>
+                <div id="teaserImg5">
+                    <img src="css/images/capture.PNG" width="200">
+                </div>
+            </article>
+
+        </div>
+<!--        // travel list items on left-->
+        <div id="leftnax">
+            <a class="section-title">Travel</a>
+            <ul style="list-style: none">
+                <li id="1">
+                    <a>Hot Cruise Deals</a>
+                </li>
+                <li id="2">
+                    <a>Hot Land Deals</a>
+                </li>
+                <li id="3">
+                    <a>Top Destinations</a>
+                </li>
+                <li id="4">
+                    <a>AAA Vacations</a>
+                </li>
+                <li id="5">
+                    <a>Disney Destinations</a>
+                </li>
+                <li id="6">
+                    <a>Universal Orlando Vacations</a>
+                </li>
+                <li id="7">
+                    <a>TripTik, TourBook & Maps</a>
+                </li>
+                <li id="8">
+                    <a>Travel Insurance</a>
+                </li>
+                <li id="9">
+                    <a>Theme Park Tickets</a>
+                </li>
+                <li id="10">
+                    <a>AAA Travel Money &
+                        <br>
+                        Foreign Currency</a>
+                </li>
+                <li id="11">
+                    <a>Passport Information</a>
+                </li>
+                <li id="12">
+                    <a>AAA Living</a>
+                </li>
+                <li id="13">
+                    <a>Call 866.222.6033</a>
+                </li>
+            </ul>
+        </div>
+<!--        // footer-->
+        <div id="footerImg">
+            <img src="css/images/footer.PNG" width="1600">
+        </div>
+<!--// center tabs with validation and a javascript money converter-->
+        <div id="tabs">
+            <ul>
+                <li><a href="#customer">Customer Information</a></li>
+                <li><a href="#travel">Travel Type</a></li>
+                <li><a href="#destination">Destination & Dates</a></li>
+                <li><a href="#money">Money Converter</a></li>
+                <li><a href="#submit">Submit Application</a></li>
+            </ul>
+
+            <div id="customer">
+                <form id="testForm0">
+                    <h3>Customer Information</h3>
+
+                    <div class="table">
+                        <section class="row">
+                            <div class="cell">
+                                <h5>First Name</h5>
+                                <input type="text" required title="Enter something"/>
+                            </div>
+                            <div class="cell">
+                                <h5>Last Name</h5>
+                                <input type="text" required title="Enter something"/>
+                            </div>
+                        </section>
+                        <section class="row">
+                            <div class="cell">
+                                <h5>Email Address</h5>
+                                <input type="text" required title="Enter something"/>
+                            </div>
+                            <div class="cell">
+                                <h5>Phone Number</h5>
+                                <input type="text" required title="Enter something"/>
+                            </div>
+                        </section>
+
+                        <div id="adults">
+                            <p class="label">Number of adults</p>
+                            <input type="radio" id="anone" name="adults">
+                            <label for="anone">0</label>
+
+                            <input type="radio" id="aone" name="adults">
+                            <label for="aone">1</label>
+
+                            <input type="radio" id="atwo" name="adults">
+                            <label for="atwo">2</label>
+
+                            <input type="radio" id="athree" name="adults">
+                            <label for="athree">3</label>
+
+                        </div>
+
+                        <div id="children">
+                            <p class="label">Number of children</p>
+                            <input type="radio" id="bnone" name="children">
+                            <label for="bnone">0</label>
+
+                            <input type="radio" id="bone" name="children">
+                            <label for="bone">1</label>
+
+                            <input type="radio" id="btwo" name="children">
+                            <label for="btwo">2</label>
+
+                            <input type="radio" id="bthree" name="children">
+                            <label for="bthree">3</label>
+
+                        </div>
+                        <input type="button" value="Submit" id="tab0submit"/>
+                    </div>
+                </form>
+            </div>
+
+            <div id="travel">
+                <form id="testForm1">
+                    Travel Type
+
+                    <fieldset>
+                        <label for="adventure">Adventure</label>
+                        <select name="adventure" id="adventure">
+                            <option disabled selected>Please pick one</option>
+                            <option><a href='#page2'>Safari</a></option>
+                            <option><a href='#page3'>Ski & Snowboarding</a></option>
+                            <option><a href='#page4'>Cycling</a></option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="beaches">Beaches</label>
+                        <select name="beaches" id="beaches">
+                            <option disabled selected>Please pick one</option>
+                            <option><a href='#page5'>Caribbean</a></option>
+                            <option><a href='#page6'>Europe</a></option>
+                            <option><a href='#page7'>US</a></option>
+                            >
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="artistic">Artistic & Cultural</label>
+                        <select name="artistic" id="artistic">
+                            <option disabled selected>Please pick one</option>
+                            <option><a href='#page8'>European Culture</a></option>
+                            <option><a href='#page9'>Asian Culture</a></option>
+                            <option><a href='#page10'>Mayan Culture</a></option>
+                            >
+                        </select>
+                    </fieldset>
+
+                    <input type="button" value="Submit" id="tab1submit"/>
+                </form>
+            </div>
+
+            <div id="destination">
+                Destinations & Dates
+
+                <form id="testForm2">
+                    <div id="cyclingselected" hidden>
+                        Here are your cycling options:
+                        <select>
+                            <option><a href="#">Carmel Valley, California</a></option>
+                            <option><a href="#">Tuscany, Italy</a></option>
+                        </select>
+
+                    </div>
+                    <div id="safariselected" hidden>
+                        Here are your safari options:
+                        <select>
+                            <option><a href="#">Zambezia Valley, Zumbia</a></option>
+                            <option><a href="#">Etosha National Park, Namibia</a></option>
+                        </select>
+                    </div>
+                    <div id="skiselected" hidden>
+                        Here are your ski & snowboarding options:
+                        <select>
+                            <option><a href="#">Park City, Utah</a></option>
+                            <option><a href="#">Salzburg, Austria</a></option>
+                        </select>
+                    </div>
+                    <div id="caribbeanselected" hidden>
+                        Here are your Caribbean options:
+                        <select>
+                            <option><a href="#">Cuba</a></option>
+                            <option><a href="#">Jamaica</a></option>
+                        </select>
+                    </div>
+                    <div id="europeselected" hidden>
+                        Here are your Europe options:
+                        <select>
+                            <option><a href="#">Capri, Italy</a></option>
+                            <option><a href="#">Ibiza, Spain</a></option>
+                        </select>
+                    </div>
+                    <div id="usselected" hidden>
+                        Here are your US options:
+                        <select>
+                            <option><a href="#">Miami, Florida</a></option>
+                            <option><a href="#">Los Angeles, California</a></option>
+                        </select>
+                    </div>
+                    <div id="europeanselected" hidden>
+                        Here are your European Culture options:
+                        <select>
+                            <option><a href="#">Paris, France</a></option>
+                            <option><a href="#">Rome, Italy</a></option>
+                        </select>
+                    </div>
+                    <div id="asianselected" hidden>
+                        Here are your Asian Culture options:
+                        <select>
+                            <option><a href="#">Tokyo, Japan</a></option>
+                            <option><a href="#">Kyoto, Japan</a></option>
+                        </select>
+                    </div>
+                    <div id="mayanselected" hidden>
+                        Here are your Mayan Culture options:
+                        <select>
+                            <option><a href="#">Tikal, Guatemala</a></option>
+                            <option><a href="#">Palenque, Mexico</a></option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Start Date: <input type="text" id="datepicker"></p>
+
+                    </div>
+                    <div>
+                        <p>End Date: <input type="text" id="datepicker2"></p>
+
+                    </div>
+                    <input type="button" value="Submit" id="tab2submit"/>
+                </form>
+            </div>
+
+            <div id="money">
+                Currency Converter
+
+                <form id="testForm3">
+                    <table border="0">
+                        <tr>
+                            <td>Euro:</td>
+                            <td><input type="text" name="euro" onChange="euroConverter()"/></td>
+                        </tr>
+                        <tr>
+                            <td>US Dollar:</td>
+                            <td><input type="text" name="dollar" onChange="dollarConverter()"/></td>
+                        </tr>
+                        <tr>
+                            <td>British Pound:</td>
+                            <td><input type="text" name="pound" onChange="poundConverter()"/></td>
+                        </tr>
+                        <tr>
+                            <td>Japanese Yen:</td>
+                            <td><input type="text" name="yen" onChange="yenConverter()"/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center"><input type="button" value="Convert!"/></td>
+                        </tr>
+                    </table>
+                    <input type="button" value="Submit" id="tab3submit"/>
+                </form>
+            </div>
+
+            <div id="submit">
+                <form id="testForm4">
+                    <h3>Ready to book your vacation?</h3>
+                    <input type="button" value="Submit" id="tab4submit"/>
+                </form>
+                <div id="confirm" class="ui-dialog-content"
+                     style="width:auto; min-height: 0; max-height: none; height: auto;">
+                    <h3>Confirmation email with more information has been sent.</h3>
+                </div>
+                <div id="error" class="ui-dialog-content"
+                     style="width:auto; min-height: 0; max-height: none; height: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
